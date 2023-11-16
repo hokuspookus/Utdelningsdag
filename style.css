@@ -1,0 +1,87 @@
+body {
+	background: linear-gradient(to bottom right, #9c27b0, #673ab7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Poppins', Arial, sans-serif;
+	transition: filter 0.3s ease;
+}
+
+.info {
+	text-align: center;
+}
+
+.info h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	transition: font-size 0.2s;
+	background: linear-gradient(to top right, purple, pink);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 20px;
+	transition: transform 0.2s;
+	position: relative;
+	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+	transform: perspective(800px) rotateX(var(--rotate-x)) rotateY(var(--rotate-y)) scale(1.1);
+}
+
+#due {
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	text-align: center;
+	transform: translateX(-50%);
+}
+
+.input-container {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+.oval-input {
+	border-radius: 50px;
+	padding: 10px 20px;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+
+.oval-button {
+	border-radius: 50px;
+	padding: 10px 20px;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-size: 16px;
+	border: none;
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: transform 0.2s;
+	position: relative;
+	box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.oval-button:hover {
+	transform: scale(1.1);
+}
